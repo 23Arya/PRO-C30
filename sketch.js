@@ -120,7 +120,6 @@ function draw() {
   image(polygon_img ,polygon.position.x,polygon.position.y,40,40);
 
   slingShot.display();
-  
 }
 function mouseDragged(){
   Matter.Body.setPosition(this.polygon,{x:mouseX,y:mouseY});
@@ -134,23 +133,18 @@ if(keyCode === 32){
   slingShot.attach(this.polygon);
 }
 }
-
 if(block1.isTouching(ground)){
   block1.visible = false;
 }
-
 if(block2.isTouching(ground)){
   block2.visible = false;
 }
-
 if(block3.isTouching(ground)){
   block3.visible = false;
 }
-
 if(block4.isTouching(ground)){
   block4.visible = false;
 }
-
 if(block5.isTouching(ground)){
   block5.visible = false;
 }
@@ -158,11 +152,9 @@ if(block5.isTouching(ground)){
 if(block6.isTouching(ground)){
   block6.visible = false;
 }
-
 if(block7.isTouching(ground)){
   block7.visible = false;
 }
-
 if(block8.isTouching(ground)){
   block8.visible = false;
 }
